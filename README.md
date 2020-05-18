@@ -35,18 +35,10 @@ You are creating your very own movie database (definitely not IMDB). You have be
 - The application is structured to consume data according to the structure provided by the back end service
 
 ## Instructions
-### Front End Setup:
-- run `npx create-react-app gmdb-frontend` to generate a new project
-- In your command line, navigate to the generated project
-- to install Cypress, run `npm install cypress --save-dev`
-- install and setup Enzyme. [following these directions](https://create-react-app.dev/docs/running-tests)
-- to test your app, run `npm run test`
-- to run your app, run `npm run start`
-- - The server will be available at `http://localhost:3000` 
 
-### Back End Service Setup:
+### Server Setup:
 - fork and clone this repo using git
-- to install the back end service and dependencies, run `npm install` in the root of the project directory
+- to install the back end service and dependencies, run `npm install` in the root of the `server/` directory
 - To start the server, run `npm run start`
 - The server will be available at `http://localhost:3001` 
 
@@ -57,3 +49,13 @@ You are creating your very own movie database (definitely not IMDB). You have be
 - `GET reviews/:movieId` - returns all reviews for a given movie
 - `POST reviews` - creates a new review, returns success status in JSON response 
 - `POST register` - creates a new user, returns success status in JSON response
+
+### Front End Setup:
+In a new directory
+- run `npx create-react-app gmdb-frontend` to generate a new project
+- In your command line, navigate to the generated project
+- to install Cypress, run `npm install cypress --save-dev`
+- install and setup Enzyme. [following these directions](https://create-react-app.dev/docs/running-tests)
+- to test your app, run `npm run test`
+- to run your app, run `npm run start`
+- - The server will be available at `http://localhost:3000` 
