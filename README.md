@@ -1,4 +1,4 @@
-# GMDB front end
+# TDD React Checkpoint - Build Server Backed GMDB Front End
 
 ## Objectives
     - Write user stories based off of feature requests and designs
