@@ -8,7 +8,7 @@
 You are creating your very own movie database (definitely not IMDB). You have been given some designs and feature requests of what a Minimum Viable Product should look like, and it's your responsibility to create your own user stories and work flow.
 
 ### Features:
-- Browse movies anonomously
+- Browse movies anonymously
 - Look at a specific movie with details and reviews
 - Search movies
 - Post a review on a movie
