@@ -4,9 +4,11 @@ const bodyParser = require("body-parser")
 const express = require('express')
 const app = express()
 const port = 3001
+const cors = require('cors')
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
+app.use(cors())
 
 const movies = JSON.parse(fs.readFileSync("movies.JSON"))
 const reviews = [{email: 'johndoe@gmail.com', movieId: 1, reviewTitle: "Director is a scumbag", reviewText: "I can't believe Gunn said those things on Twitter... Makes me not want to watch this movie!!!"}]
