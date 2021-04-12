@@ -14,12 +14,12 @@ const users = [{email: 'johndoe@gmail.com', password: 'password'}];
 
 
 app.get('/movies', (req, res) => res.json(movies))
-app.get('/movies/:movieId', (req, res) => res.send(movies[req.params.movieId]))
+app.get('/movies/:movieId', (req, res) => res.send(movies.filter(movie => movie.movieId === +req.params.movieId)))
 
 app.get('/search',(req,res) => {
     const query = decodeURIComponent(req.query.query)
     const filteredMovies = movies.filter(movie => movie.title.includes(query))
-    
+
     res.send(filteredMovies)
 });
 
@@ -60,7 +60,7 @@ app.post('/register',function(req,res){
             "status": "success",
             "message": "The account has been successfully created"
         }
-        
+
     }else{
         result = {
             "status": "failed",
