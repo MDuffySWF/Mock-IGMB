@@ -14,7 +14,7 @@ const users = [{email: 'johndoe@gmail.com', password: 'password'}];
 
 
 app.get('/movies', (req, res) => res.json(movies))
-app.get('/movies/:movieId', (req, res) => res.send(movies.filter(movie => movie.movieId === +req.params.movieId)))
+app.get('/movies/:movieId', (req, res) => res.send(movies.find(movie => movie.movieId === +req.params.movieId)))
 
 app.get('/search',(req,res) => {
     const query = decodeURIComponent(req.query.query)
