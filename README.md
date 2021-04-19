@@ -55,7 +55,7 @@ In a new directory
 - run `npx create-react-app gmdb-frontend` to generate a new project
 - In your command line, navigate to the generated project
 - to install Cypress, run `npm install cypress --save-dev`
-- install and setup Enzyme. [following these directions](https://create-react-app.dev/docs/running-tests)
+- install and setup React Testing Library
 - to test your app, run `npm run test`
 - to run your app, run `npm run start`
 - - The server will be available at `http://localhost:3000` 
