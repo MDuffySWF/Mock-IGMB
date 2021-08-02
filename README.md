@@ -54,7 +54,7 @@ You are creating your very own movie database (definitely not IMDB). You have be
 In a new directory
 - run `npx create-react-app gmdb-frontend` to generate a new project
 - In your command line, navigate to the generated project
-- to install Cypress, run `npm install cypress --save-dev`
+- to install Cypress, run `npm install --save-dev cypress @testing-library/cypress`
 - install and setup React Testing Library [following this link](https://testing-library.com/docs/react-testing-library/intro/)
 - to test your app, run `npm run test`
 - to run your app, run `npm run start`
